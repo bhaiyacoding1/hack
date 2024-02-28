@@ -1,8 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-heading-color: #0062ff;
+  --backgraound-color: #000000;
+  --main-heading-color: #ffffff;
+  --second-heading-color: rgb(159, 159, 159);
+}
+
+html{
+  font-size: 62.5%;
+}
+
+
 /* ---- reset ---- */
+
 body {
   margin: 0;
   font: normal 75% Arial, Helvetica, sans-serif;
 }
+html,body{
+  width: 100%;
+  height: 100vh;
+}
+
+
 
 canvas {
   display: block;
@@ -15,7 +42,7 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: #000000;
+  background-color: var(--backgraound-color);
   background-image: url("");
   background-repeat: no -repeat;
   background-size: cover;
@@ -76,7 +103,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px;
+  padding: 4rem 3rem;
   height: 5vh;
   z-index: 1;
   background-color: rgb(171 171 171 / 9%);
@@ -112,7 +139,7 @@ nav ul li a {
   color: rgb(255, 255, 255);
   text-transform: capitalize;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 #close,.humber-manu{
@@ -129,7 +156,7 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   z-index: 5;
-  background-color: transparent;;
+  background-color: transparent;
 
   & .hero-text {
     position: absolute;
@@ -148,8 +175,12 @@ nav ul li a {
     color: white;
 
     & h1 {
-      font-size: 5rem;
+      text-align: center;
+      font-family: "Caveat", cursive;
+      font-size: 10rem;
+      font-weight: 500;
       text-transform: capitalize;
+      line-height: 1.3;
       margin: 10px 0px;
     }
 
@@ -162,7 +193,7 @@ nav ul li a {
     }
 
     & p {
-      font-size: 1rem;
+      font-size: 2rem;
       color: rgb(159, 159, 159);
       text-align: center;
     }
@@ -171,7 +202,7 @@ nav ul li a {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 2rem;
+      gap: 3rem;
       cursor: pointer;
       z-index: 10;
 
@@ -182,7 +213,7 @@ nav ul li a {
         color: black;
         font-weight: 600;
         text-transform: capitalize;
-        font-size: 1rem;
+        font-size: 1.5rem;
         border-radius: 20px;
         cursor: pointer;
       }
@@ -206,13 +237,104 @@ nav ul li a {
     
   }
 }
-.about{
+.custom-shape-divider-bottom-1696162272 {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
   width: 100%;
-  height: 100vh;
-  background-color: red;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 0;
 }
+
+.custom-shape-divider-bottom-1696162272 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 12rem;
+}
+
+.custom-shape-divider-bottom-1696162272 .shape-fill {
+  fill: #ffffff18;
+}
+.about-section{
+  width: 100%;
+  /* height: 70vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.about{
+  position: relative;
+  width: 100%;
+  /* border: 2px solid black; */
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+.text-area{
+  position: absolute;
+  left: 5%;
+  line-height: 2;
+  opacity: .2;
+}
+.text-area-hover{
+  position: absolute;
+  line-height: 2;
+  left: 5%;
+  opacity: 1;
+  overflow: hidden;
+}
+.text-area h1, .text-area-hover h1{
+  font-size: 6rem;
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+}
+.text-area h2, .text-area-hover h2{
+  font-size: 6rem;
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+}
+/* .text-area h3, .text-area-hover h3{
+  font-size: 3rem;
+} */
+.text-area-hover h1{
+  width: 0%;
+  text-wrap: nowrap;
+  overflow: hidden;
+  
+}
+.text-area-hover h2{
+  width: 0%;
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+/* .text-area-hover h3{
+  width: 0%;
+  text-wrap: nowrap;
+  overflow: hidden;
+} */
+
+.hii{
+  width: 100%;
+  position: absolute;
+  /* top: 0; */
+  bottom: -13rem;
+  /* height: 30px; */
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 30px 0 200px 100px rgb(0 215 255);
+  opacity: .3;
+}
+
 .card{
   width: 100%;
   height: 100vh;
-  background-color: gray;
+  background-color: rgb(0, 0, 0);
 }
