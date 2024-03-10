@@ -15,7 +15,7 @@ requestAnimationFrame(raf)
 
 var tl = gsap.timeline({
     scrollTrigger:{
-        trigger:".about",
+        trigger:".tagline",
         start:"0% 50%",
         end:"100% 50%",
         // markers:true,
