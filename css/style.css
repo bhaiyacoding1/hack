@@ -443,9 +443,9 @@ nav ul li a {
 }
 
 
-/* ---------END CARD CSS------------- */
+/* <!-- ========== END CARD Section ========== --> */
 
-/* ---------START TAGLINE CSS------------- */
+/* <!-- ========== END TAG LINE Section ========== --> */
 .tagline-section{
   width: 100%;
   /* height: 70vh; */
@@ -489,9 +489,6 @@ nav ul li a {
   font-family: "Caveat", cursive;
   font-weight: 600;
 }
-/* .text-area h3, .text-area-hover h3{
-  font-size: 3rem;
-} */
 .text-area-hover h1{
   width: 0%;
   text-wrap: nowrap;
@@ -503,11 +500,6 @@ nav ul li a {
   text-wrap: nowrap;
   overflow: hidden;
 }
-/* .text-area-hover h3{
-  width: 0%;
-  text-wrap: nowrap;
-  overflow: hidden;
-} */
 
 .hii{
   /* width: 100%; */
@@ -525,3 +517,115 @@ nav ul li a {
   mask: radial-gradient(400px 400px at red black, #000 1%,transparent 50%);
   /* opacity: ; */
 }
+/* <!-- ========== END TAG LINE Section ========== --> */
+
+
+
+
+
+
+
+
+
+/* <!-- ========== Start   FOOTER Section ========== --> */
+
+footer{
+  width: 100%;
+  background-color: #191919;
+  color: white;
+  font-size: 2rem;
+  
+}
+footer a{
+  text-decoration: none;
+  color: rgb(133, 133, 133);
+}
+footer li{
+  list-style: none;
+}
+footer .container{
+  width: 100%;
+  height: 300px;
+  padding:  0 0 0 5rem;
+}
+footer .grid{
+  display: grid;
+  place-items: center;
+}
+footer .grid-four--cols{
+  grid-template-columns: repeat(4,1fr);
+}
+ul {
+  list-style: none;
+}
+.logo-brand a img{
+  width: 70%;
+  color: white;
+  line-height: 1.5;
+}
+.footer-pera{
+  color: gray;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.social-media{
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0 0 0;
+}
+.social-media .social-icon i{
+ padding: 1rem;
+ font-size: 2.5rem;
+ transition: all 0.5s linear;
+
+}
+footer .social-icon i:first-child:hover {
+  background-color: #ff0056;
+  border-radius: 10px;
+}
+
+footer .social-icon i:nth-child(2):hover {
+  background-color: #0077B5;
+  border-radius: 10px;
+}
+
+footer .social-icon i:nth-child(3):hover {
+  background-color: black;
+  border-radius: 10px;
+}
+
+footer .social-icon i:nth-child(4):hover {
+  background-color: #5649c1;
+  border-radius: 10px;
+}
+
+footer .social-icon i:nth-child(5):hover {
+  background-color: #f90505;
+  border-radius: 10px;
+}
+.footer-subheading{
+  font-size: 3rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+footer ul li a{
+  line-height: 1.5;
+}
+
+footer hr{
+  opacity: 0.3;
+  width: 90%;
+  height: 1;
+  margin: 0 auto;
+}
+footer .copy-right{
+  color: gray;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* <!-- ========== END   FOOTER Section ========== --> */

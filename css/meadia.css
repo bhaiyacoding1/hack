@@ -53,10 +53,13 @@
   .hero-text-pera p {
     font-size: 1.5rem;
   }
-  .cards__inner {
+ .cards__inner {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
   .overlay {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .grid-four--cols {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
@@ -160,6 +163,35 @@
   .text-area-hover h2 {
     font-size: 5rem;
   }
+  footer .container{
+    padding:  0 1.5rem;
+    height: 450px;
+  }
+  footer .grid-four--cols {
+    grid-template-columns: repeat(3, minmax(33%, 1fr));
+    text-align: center;
+    
+    & .footer-1--div {
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+      margin: 5rem 0 2rem 0;
+    }
+
+    & .footer-2--div,.footer-3--div,.footer-4--div{
+      margin-top: 5rem;
+    }
+  }
+  .logo-brand a img{
+    width: 60%;
+    color: white;
+    line-height: 1.5;
+  }
+  .social-media{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 1.5rem 0 0 0;
+  }
 
 }
 
@@ -174,10 +206,9 @@
   .text-area-hover h2 {
     font-size: 4.3rem;
   }
-  /* .cards__inner {
-    display: flex;
-    flex-direction: row;
-  } */
+  .tagline{
+    height: 30vh;
+  }
 }
 
 @media (width <=580px) {
