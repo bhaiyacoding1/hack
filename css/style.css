@@ -29,6 +29,9 @@ html,body{
   min-height: 100vh;
 }
 
+header .all-contianer{
+  height: 0;
+}
 
 
 canvas {
@@ -248,7 +251,7 @@ nav ul li a {
   font-family: "League Spartan", system-ui, sans-serif;
   font-size: 1.5rem;
   line-height: 1.2;
-  background-color: #212121;
+  background-color: #0b0b0b;
   color: #ddd;
 }
 
@@ -341,7 +344,7 @@ nav ul li a {
   --lightness: 51.37%;
 }
 
-.card:nth-child(5) {
+.card:nth-child(8) {
   --hue: 291.34;
   --saturation: 95.9%;
   --lightness: 61.76%;
@@ -502,36 +505,178 @@ nav ul li a {
 }
 
 .hii{
-  /* width: 100%; */
-  /* width: 50px;
-  height: 50px; */
   position: absolute;
-  /* top: 0; */
   top: 100px;
   left: 50%;
-  /* bottom: -13rem; */
-  /* height: 30px; */
   background-color: red;
   border-radius: 50%;
-  /* box-shadow: 30px 0 200px 100px rgb(43, 255, 0); */
-  mask: radial-gradient(400px 400px at red black, #000 1%,transparent 50%);
-  /* opacity: ; */
+  box-shadow: 0 0 500px 100px red;
 }
 /* <!-- ========== END TAG LINE Section ========== --> */
 
+/* <!-- ========== END TYPE-WRITER Section ========== --> */
+.type-writer-section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: rgb(255, 140, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  flex-direction: column;
+  gap: 20px;
+}
+.type-section-heading{
+  font-size: 3rem;
+  padding-bottom:5rem;
+  text-align: center;
+}
+#back-effect-1{
+    position: absolute;
+    /* width: 20px ; */
+    top: 40%;
+    left: 15%;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0 0 5000px 70px rgb(0, 255, 115);
+}
+#back-effect-2{
+    position: absolute;
+    /* width: 20px ; */
+    bottom: 25%;
+    right: 15%;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0 0 5000px 60px rgb(0, 255, 115);
+}
+
+.type-rider-div{
+  width: 90%;
+  height: auto;
+  background-color: rgb(142, 142, 142);
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  color: rgb(255, 140, 0);
+  font-size: 2rem;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* margin-bottom: 15rem; */
+}
+.type-rider-div:hover{
+  border: 1px solid gray;
+
+}
+.type-writer-content{
+  width: 100%;
+  padding: 0 2rem;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.type-rider-content-compiler{
+  width: 100%;
+  padding: 1rem 1rem;
+  color: white;
+  /* border: 1px solid white; */
+  display: flex;
+  margin: 5.5rem 0 0 0;
+  flex-direction: column;
+
+  & span{
+    color: orange;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 2;
+  }
+
+  & h3{
+    font-size: 4.5rem;
+    line-height: 1.2;
+  }
+
+  & p{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    color: gray;
+  }
+}
+.typerider-btn{
+  margin: 2.5rem 0;
+}
+.typerider-btn button{
+  outline: none;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+  background-color: orange;
+  cursor: pointer;
+}
+.typerider-btn button:hover{
+  background-color: rgb(255, 172, 18);
+}
+.type-rider-card {
+  width: 100%;
+  height: 59.8vh;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+ }
+ 
+ .tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+ }
+ 
+ .circle {
+  padding: 0 4px;
+ }
+ 
+ .box {
+  display: inline-block;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  padding: 1px;
+  border-radius: 50%;
+ }
+ 
+ .red {
+  background-color: #ff605c;
+ }
+ 
+ .yellow {
+  background-color: #ffbd44;
+ }
+ 
+ .green {
+  background-color: #00ca4e;
+ }
+ .card__content{
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1.3;
+  /* padding: 1rem; */
+ }
+ 
 
 
-
-
-
-
-
+/* <!-- ========== END TYPE-WRITER Section ========== --> */
 
 /* <!-- ========== Start   FOOTER Section ========== --> */
 
 footer{
   width: 100%;
-  background-color: #191919;
+  background-color: rgb(22, 22, 22);
   color: white;
   font-size: 2rem;
   
@@ -562,6 +707,7 @@ ul {
   width: 70%;
   color: white;
   line-height: 1.5;
+  border: none;
 }
 .footer-pera{
   color: gray;
