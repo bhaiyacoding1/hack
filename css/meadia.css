@@ -3,6 +3,10 @@
     font-size: 56.25%;
     /* 1rem = 9px  */
   }
+  :is(.section-about,
+  .section-course) .grid {
+    gap: 6.4rem;
+  }
 
   .hero-text-pera p {
     font-size: 1.8rem;
@@ -103,22 +107,7 @@
   }
 
   .mobile-nav {
-    position: absolute;
-    right: -100%;
-    top: 0;
-    /* background-color: rgb(255, 255, 255); */
-    background-color: rgb(0, 0, 0);
-    backdrop-filter: blur(50px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    /* position: fixed; */
-    width: 325px;
-    height: 100vh;
-    z-index: 10000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition: all 0.3s;
+    display: none;
   }
 
   nav {
@@ -156,6 +145,7 @@
     font-size: 3.5rem;
   }
 
+
   .hero-section {
 
     & .hero-text {
@@ -170,6 +160,14 @@
 
   .hero-text-pera p {
     font-size: 1rem;
+  }
+
+  .section-about .about-div {
+    text-align: left;
+  }
+  .section-about img{
+    width: 13rem;
+    height: auto;
   }
 
   .text-area h1,
@@ -239,6 +237,17 @@
 
 @media (width <=768px) {
 
+  .grid-two--cols,
+  .grid-three--cols{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .contect-container {
+    padding: 5.6rem 2.4rem 1rem 2.4rem;
+  }
+
+  .contact-title {
+    font-size: 2.4rem;
+  }
   .text-area h1,
   .text-area-hover h1 {
     font-size: 4.3rem;
@@ -266,7 +275,7 @@
     left: 10%;
     background-color: red;
     border-radius: 50%;
-    box-shadow: 0 0 8000px 50px rgb(0, 255, 115);
+    box-shadow: 0 0 8000px 30px rgb(0, 255, 115);
 }
 #back-effect-2{
     position: absolute;
@@ -275,7 +284,7 @@
     right: 5%;
     background-color: red;
     border-radius: 50%;
-    box-shadow: 0 0 8000px 50px rgb(0, 255, 115);
+    box-shadow: 0 0 8000px 30px rgb(0, 255, 115);
 }
   .type-rider-content-compiler{
 

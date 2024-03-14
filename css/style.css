@@ -99,7 +99,6 @@ a{
   height: 100vh;
   z-index: 5;
   overflow: hidden;
-  /* background-color: rgba(255, 255, 255, 0.132); */
 }
 
 .nav-bar {
@@ -126,7 +125,7 @@ a{
   width: 40%;
 }
 
-nav ul {
+ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,8 +146,33 @@ nav ul li a {
 
 #close,.humber-manu{
   display: none;
+} 
+.custom-shape-divider-bottom-1696162272 {
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  /* border: 1px solid red; */
+  /* z-index: 1; */
 }
 
+.custom-shape-divider-bottom-1696162272 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 12rem;
+}
+
+.custom-shape-divider-bottom-1696162272 .shape-fill-S {
+  fill: #ffffff36;
+}
+.custom-shape-divider-bottom-1696162272 .shape-fill {
+  fill: #000000;
+}
 .hero-section {
   position: absolute;
   /* position: relative; */
@@ -241,6 +265,146 @@ nav ul li a {
   }
 }
 
+/***** about Section *****/
+
+.about-container {
+  max-width: 142rem;
+  margin: 0 auto;
+  padding: 5.6rem 2.4rem;
+}
+.section-about{
+  background-color: black;
+}
+.section-about .grid {
+  gap: 6.4rem;
+}
+
+.grid-three--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.section-about .about-div {
+  text-align: center;
+}
+
+.section-about img {
+  padding: 2.4rem;
+  background-color: var(--supporting-color);
+  width: 15rem;
+  height: auto;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: rgb(171 171 171 / 9%);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.151);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.icon:hover>img {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  /* rotate: 360deg; */
+  /* background: linear-gradient(to right, #0575e6, #021b79); */
+}
+
+/***** End about Section *****/
+
+/***** course Section *****/
+
+.grid-four--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.course-container {
+  max-width: 142rem;
+  margin: 0 auto;
+  padding: 5.6rem 2.4rem;
+}
+
+.section-course {
+  background-color: var(--backgraound-color);
+}
+
+.section-course .grid {
+  gap: 3.2rem;
+}
+
+.section-course .course-div {
+  padding: 3.2rem;
+  cursor: pointer;
+}
+
+.section-course .course-div:hover {
+  background-color: rgb(4, 4, 4);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+}
+.course-div:nth-child(1) .icon .fa-solid {
+  color: #edff50;
+  /* background-color: #f6dfce; */
+  background-color: rgb(171 171 171 / 9%);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.151);
+}
+
+.course-div:nth-child(2) .icon .fa-solid {
+  color: #68bf9b;
+  /* background-color: #e7f6ef; */
+  background-color: rgb(171 171 171 / 9%);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.151);
+}
+
+.course-div:nth-child(3) .icon .fa-solid {
+  color: #ff8b52;
+  /* background-color: #fbebe8; */
+  background-color: rgb(171 171 171 / 9%);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.151);
+}
+
+.course-div:nth-child(4) .icon .fa-solid {
+  color: #357474;
+  /* background-color: #ccf7f7; */
+  background-color: rgb(171 171 171 / 9%);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.151);
+}
+
+.course-div:nth-child(5) .icon .fa-solid {
+  color: #d988b9;
+  /* background-color: rgb(247, 223, 238); */
+  background-color: rgb(171 171 171 / 9%);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.151);
+}
+
+.course-div:nth-child(6) .icon .fa-solid {
+  color: #b37e44;
+  /* background-color: #f6dfce; */
+  background-color: rgb(171 171 171 / 9%);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.151);
+}
+
+.course-div:nth-child(7) .icon .fa-solid {
+  color: #14a34f;
+  /* background-color: #dce9fa; */
+  background-color: rgb(171 171 171 / 9%);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.151);
+}
+
+/***** End course Section *****/
+
 /* ---------START CARD CSS------------- */
 
 #main-card-section {
@@ -300,8 +464,8 @@ nav ul li a {
   align-items: start;
   gap: 1.25em;
   color: #eceff1;
-  background-color: #2b2b2b;
-  border: 1px solid #eceff133;
+  /* background-color: #2b2b2b; */
+  border: 0.5px solid #eaebec0a;
   border-radius: 15px;
 }
 
@@ -391,7 +555,8 @@ nav ul li a {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  background-color: #0d0d0d;
+  /* background-color: #0d0d0d; */
+  border: 1px solid #eaebec1b;
   padding: 0.7em;
   border-radius: 10px;
   font-size: 1.5rem;
@@ -425,6 +590,8 @@ nav ul li a {
   background-color: hsla(var(--hsl), 0.15);
   border-color: hsla(var(--hsl), 1);
   box-shadow: 0 0 0 1px inset hsl(var(--hsl));
+  /* box-shadow: 0 1px 15px 5px rgba(195, 47, 47, 0.288); */
+
 }
 
 .overlay .cta {
@@ -442,7 +609,7 @@ nav ul li a {
 
 :not(.overlay) > .card:hover {
   --lightness: 95%;
-  background: hsla(var(--hsl), 0.1);
+  /* background: hsla(var(--hsl), 0.1); */
 }
 
 
@@ -672,6 +839,65 @@ nav ul li a {
 
 /* <!-- ========== END TYPE-WRITER Section ========== --> */
 
+/***** actual contact page Section *****/
+
+.contect-container {
+  max-width: 142rem;
+  margin: 0 auto;
+  padding: 5.6rem 2.4rem;
+}
+.grid-two--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-contact {
+  & .grid {
+    align-items: center;
+    gap: 6.4rem;
+  }
+}
+
+.mb-3 {
+  margin-bottom: 3.2rem;
+}
+
+label {
+  display: block;
+  text-transform: capitalize;
+}
+
+.contact-content .grid {
+  gap: 6.4rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.4rem 2.4rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+::placeholder {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+.btn-submit {
+  font-size: 1.8rem;
+  border: none;
+  text-transform: capitalize;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: 0.1rem solid #003b99;
+}
+
+/***** End actual contact page Section *****/
+
+
+
 /* <!-- ========== Start   FOOTER Section ========== --> */
 
 footer{
@@ -750,6 +976,7 @@ footer .social-icon i:nth-child(5):hover {
   border-radius: 10px;
 }
 .footer-subheading{
+  color: white;
   font-size: 3rem;
   line-height: 1.5;
   cursor: pointer;
