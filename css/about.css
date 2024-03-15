@@ -1,0 +1,116 @@
+.about-section {
+    width: 100%;
+    background-color: black;
+  }
+  .about-container {
+    max-width: 142rem;
+    margin: 0 auto;
+    padding: 6.6rem 8rem 5.6rem 8rem;
+  
+  }
+  
+  .two-coloum {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    place-items: center;
+    align-items: center;
+  }
+  .about-section-common-subheading {
+    color: rgb(164, 164, 164);
+    font-weight: 400;
+    /* line-height: ; */
+}
+  /* .about-container {
+      max-width: 142rem;
+      margin: 0 auto;
+      padding: 0.5rem 8rem 3rem 8rem;
+  
+  } */
+  
+  .about-section .about-img img {
+      width: 80%;
+      transform: scaleX(-1);
+      filter: drop-shadow(1px 0px 15px rgb(211, 211, 211));
+  }
+  
+  .about-section .about-text {
+      line-height: 2;
+  }
+  
+  .about-section .about-text>h2 {
+      font-size: 4.5rem;
+      color: white;
+  }
+  
+  .about-section .about-text>h2>span {
+      color: #BA68C8;
+  }
+  
+  .about-section .about-text>p {
+      color: rgb(142, 142, 142);
+      font-size: 1.5rem;
+      line-height: 1.6;
+      margin-top: 0.3rem;
+  }
+  
+  .about-section .about-text>span {
+      color: rgb(255, 255, 255);
+      font-size: 1.7rem;
+      font-weight: 600;
+      line-height: 2;
+  }
+  
+  /* about-section-end  */
+
+  @media (width <=1220px) {
+    html {
+      font-size: 54%;
+      /* 1rem = 9px  */
+    }
+}
+@media (width <=1170px) {
+    .about-section .about-text>h2 {
+        font-size: 4rem;
+        color: white;
+    }
+}
+  @media (width <=998px) {
+    .two-coloum {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        place-items: center;
+        align-items: center;
+    }
+    .about-section .about-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-section .about-img img {
+        width: 50%;
+        transform: scaleX(-1);
+        filter: drop-shadow(1px 0px 5px rgb(0, 0, 0));
+    }
+    .about-section .about-text>h2 {
+        font-size: 3.5rem;
+        color: white;
+    }
+  }
+
+  @media (width <=768px){
+    .about-section .about-img img {
+        width: 70%;
+        transform: scaleX(-1);
+        filter: drop-shadow(1px 0px 5px rgb(0, 0, 0));
+    }
+    .about-section .about-text>h2 {
+        font-size: 3rem;
+        color: white;
+    }
+    .about-section-common-subheading{
+        font-size: 1.25rem;
+    }
+  }

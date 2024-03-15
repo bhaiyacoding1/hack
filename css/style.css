@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 *{
   margin: 0;
@@ -140,7 +140,8 @@ nav ul li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   text-transform: capitalize;
-  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  /* font-weight: 500; */
   font-size: 2rem;
 }
 
@@ -205,7 +206,7 @@ nav ul li a {
       text-align: center;
       font-family: "Caveat", cursive;
       font-size: 10rem;
-      font-weight: 500;
+      font-weight: 400;
       text-transform: capitalize;
       line-height: 1.3;
       margin: 10px 0px;
@@ -225,6 +226,7 @@ nav ul li a {
       text-align: center;
     }
     & .hero-btn {
+      margin-top: 1.5rem;
       /* width: inherit; */
       display: flex;
       align-items: center;
@@ -252,12 +254,14 @@ nav ul li a {
         background-color: black;
         border: 1px solid gray;
         color: white;
+        font-size: 18px;
         padding: 10px 28px;
         cursor: pointer;
       }
       & a:last-child{
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
+        font-size: 18px;
         padding: 10px 28px;
       }
     }
@@ -429,7 +433,8 @@ nav ul li a {
 }
 
 .main__heading {
-  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   font-size: 6em;
   text-transform: capitalize;
   margin-bottom: 0.75em;
@@ -536,12 +541,12 @@ nav ul li a {
 
 .card__heading {
   font-size: 1.70em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .card-pera{
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .flow > * + * {
@@ -560,7 +565,7 @@ nav ul li a {
   padding: 0.7em;
   border-radius: 10px;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .overlay {
@@ -652,12 +657,14 @@ nav ul li a {
 .text-area h1, .text-area-hover h1{
   font-size: 6rem;
   font-family: "Caveat", cursive;
-  font-weight: 600;
+  /* font-family: "Inter", sans-serif; */
+  font-weight: 500;
 }
 .text-area h2, .text-area-hover h2{
   font-size: 6rem;
+  /* font-family: "Inter", sans-serif; */
   font-family: "Caveat", cursive;
-  font-weight: 600;
+  font-weight: 500;
 }
 .text-area-hover h1{
   width: 0%;
@@ -902,7 +909,7 @@ textarea:focus-visible {
 
 footer{
   width: 100%;
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(18, 18, 18);
   color: white;
   font-size: 2rem;
   
