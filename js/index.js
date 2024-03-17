@@ -100,3 +100,32 @@ VanillaTilt.init(document.querySelectorAll(".type-rider-div,.card"), {
   speed: 200
 });
 
+
+
+
+// ------------------------------services box---------------------------------
+
+// const boxViews = document.querySelectorAll(".services-box"),
+//   boxBtns = document.querySelectorAll(".services-button"),
+//   boxCloses = document.querySelectorAll(".services-box-close");
+
+// let box = function (boxClick) {
+//   boxViews[boxClick].classList.add("active-box");
+// };
+
+// boxBtns.forEach((boxBtn, i) => {
+//   boxBtn.addEventListener("click", () => {
+//     console.log("hyyyyy");
+//     box(i); 
+//   });
+// });
+
+// boxCloses.forEach((boxClose) => {
+//   boxClose.addEventListener("click", () => {
+//     boxViews.forEach((boxView) => {
+//       console.log("hyyyy");
+//       boxView.classList.remove("active-box");
+//     });
+//   });
+// });
+

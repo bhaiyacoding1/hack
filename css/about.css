@@ -5,7 +5,7 @@
   .about-container {
     max-width: 142rem;
     margin: 0 auto;
-    padding: 6.6rem 8rem 5.6rem 8rem;
+    padding: 6.6rem 1.5rem 5.6rem 1.5rem;
   
   }
   
@@ -41,6 +41,7 @@
   .about-section .about-text>h2 {
       font-size: 4.5rem;
       color: white;
+      margin: 0;
   }
   
   .about-section .about-text>h2>span {
@@ -107,7 +108,7 @@
         filter: drop-shadow(1px 0px 5px rgb(0, 0, 0));
     }
     .about-section .about-text>h2 {
-        font-size: 3rem;
+        /* font-size: 3rem; */
         color: white;
     }
     .about-section-common-subheading{
